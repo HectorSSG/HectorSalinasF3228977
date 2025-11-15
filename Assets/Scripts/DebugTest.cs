@@ -5,14 +5,14 @@ public class DebugTest : MonoBehaviour
 {
     [SerializeField] private int x;
     [SerializeField] private int y;
-    [SerializeField] private int r;
+    private int r;
     void Start()
     {
-        r = x + y;
+        r = x * y;
         Debug.Log("El resultado es: " + r);
     }
     void Update()
     {
-
+        Debug.LogError("No sirve ñro");
     }
 }
