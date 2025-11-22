@@ -1,14 +1,15 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
-    void Start()
-    {
-        player.SetActive(true);
-    }
-    void Update()
+
+    private void Start()
     {
 
+    }
+    public void ChangeScene()
+    {
+        SceneManager.LoadScene("Level1");
     }
 }
