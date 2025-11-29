@@ -8,8 +8,13 @@ public class GameManager : MonoBehaviour
     {
 
     }
-    public void ChangeScene()
+    public void ChangeScene(string newScene)
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(newScene);
+    }
+    public void ExitGame()
+    {
+        Debug.Log("Salió del juego");
+        Application.Quit();
     }
 }
