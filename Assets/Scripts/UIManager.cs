@@ -18,12 +18,10 @@ public class UIManager : MonoBehaviour
     public void ShowOptionsPanel()
     {
         ChangePanel(optionsPanel);
-        Debug.Log("Se presionó opciones socio");
     }
     public void ShowCreditsPanel()
     {
         ChangePanel(creditsPanel);
-        Debug.Log("Se presionó creditos socio");
     }
     public void BackButton()
     {
@@ -31,13 +29,12 @@ public class UIManager : MonoBehaviour
         {
             if (currPanel == optionsPanel)
             {
-                Debug.Log("Regresa desde opciones socio");
+                ChangePanel(mainPanel);
             }
             else if (currPanel == creditsPanel)
             {
-                Debug.Log("Regresa desde creditos socio");
+                ChangePanel(mainPanel);
             }
-            ChangePanel(mainPanel);
         }
     }
     public void ChangePanel(GameObject newPanel)
